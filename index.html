@@ -31,7 +31,7 @@
 
       <section class="digits">
           <h2 class="section-title">Цифры и факты</h2>
-            <h3 class="section-subtitle">Про учебу и мозг</h3>
+            <p class="section-subtitle">Про учебу и мозг</p>
             <ul class="table">
               <li class="table__cell">
                 <h4 class="table__heading">86 миллиардов</h4>
@@ -80,12 +80,12 @@
       <section class="kaufman">
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
             <h3 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h3>
-            <ul class="table">
+            <ul class="table table_theme_dark">
               <li class="table__cell table__cell_theme_dark">
                 <h4 class="table__heading table__heading_theme_dark">1</h4>
                 <p class="table__text table__text_theme_dark">Выберите привлекательный проект.</p>
             </li>
-            <li class="table__cell_theme_dark">
+            <li class="table__cell table__cell_theme_dark">
               <h4 class="table__heading table__heading_theme_dark">2</h4>
               <p class="table__text table__text_theme_dark">Сосредоточьтесь на каком-то одном навыке.</p>
           </li>
@@ -122,7 +122,7 @@
   <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
 </li>
 </ul>
-<img class="kaufman__triangle" src="/images/kaufman-triangle.svg" alt="Синий треугольник">
+<div class="kaufman__triangle">
       </section>
     </main>
     <footer class="footer">
@@ -131,22 +131,26 @@
           <img class="logo logo_place_footer" src="images/logo_place_footer.svg" alt="Яндекс.Практикум">
           <p class="footer__author">&copy; 2019. Виктор Абанькин</p>
         </div>
-        <nav class="footer__column footer__column_content_info">
+        <div class="footer__column footer__column_content_info">
           <h3 class="footer__column-heading">О Практикуме</h3>
-          <ul class="footer__column-links">
+          <nav>
+            <ul class="footer__column-links">
             <li><a class="footer__column-link" href="#">Главная</a></li>
             <li><a class="footer__column-link" href="#">Концепции</a></li>
             <li><a class="footer__column-link" href="#">Наставники</a></li>
           </ul>
         </nav>
-        <nav class="footer__column footer__column_content_social">
+        </div>
+        <div class="footer__column footer__column_content_social">
           <h3 class="footer__column-heading">Соцсети</h3>
+          <nav>
           <ul class="footer__column-links">
-          <li><a class="footer__column-link" href="#"><img class="footer__social-icon" src="images/facebook_color_white.svg" alt="Facebook" lang="en">Facebook</a></li>
-          <li><a class="footer__column-link" href="#"><img class="footer__social-icon" src="images/vk_color_white.svg" alt="ВКонтакте">ВКонтакте</a></li>
-          <li><a class="footer__column-link" href="#"><img class="footer__social-icon" src="images/instagram_color_white.svg" alt="Instagram" lang="en">Instagram</a></li>
+          <li><a class="footer__column-link" href="#" target="_blank"><img class="footer__social-icon" src="images/facebook_color_white.svg" alt="Facebook" lang="en">Facebook</a></li>
+          <li><a class="footer__column-link" href="#" target="_blank"><img class="footer__social-icon" src="images/vk_color_white.svg" alt="ВКонтакте">ВКонтакте</a></li>
+          <li><a class="footer__column-link" href="#" target="_blank"><img class="footer__social-icon" src="images/instagram_color_white.svg" alt="Instagram" lang="en">Instagram</a></li>
           </ul>
         </nav>
+        </div>
       </div>
     </footer>
   </div>
