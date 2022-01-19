@@ -1,3 +1,11 @@
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -16,9 +24,12 @@
   background-color: #f2f2f2;
   display: flex;
   position: relative;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
-
+.rotation{
+  animation: rotation linear 20s infinite;
+}
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
@@ -66,6 +77,11 @@
   text-decoration: none;
   color: #2f80ed;
   z-index: 4;
+  transition: color 1s ease;
+}
+.header__link:hover {
+  opacity: 0.5;
+  color: #2f80ed;
 }
 .header__main-illustration{
   width: 765px;
@@ -80,7 +96,6 @@
   width: 80%;
   min-width: 784px;
   padding-top: 100px;
-  padding-bottom: 100px;
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -111,12 +126,136 @@
 .two-columns__span-accent{
   font-weight: 700;
 }
+.techniques{
+  width: 80%;
+  margin: auto;
+}
+.cards{
+  width: 920px;
+  list-style-type: none;
+  display: grid;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  padding-top: 60px;
+}
+.cards__image{
+  width: 160px;
+  height: 160px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 43px;
+  border-radius: 50%;
+}
+.cards__item{
+  width: 240px;
+  text-align: center;
+}
+.cards__title{
+line-height: 1.15;
+font-size: 24px;
+font-weight: 600;
+margin-top: 0;
+margin-bottom: 16px;
+}
+.cards__description{
+line-height: 23px;
+font-size: 18px;
+font-weight: normal;
+margin-top: 0;
+}
+.video__iframes {
+  width: 1050px;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 50px;
+  overflow: visible;
+}
+.oakley {
+  background-color: #f2f2f2;
+  padding-top: 60px;
+}
+.khan{
+  background-color: #f2f2f2;
+}
+.khan__container{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.khan__author{
+line-height: 42px;
+font-size: 30px;
+font-weight: normal;
+margin-top: 105px;
+margin-bottom: 0;
+
+}
+.khan__title{
+line-height: 1.15;
+font-size: 60px;
+font-weight: 600;
+margin-bottom: 50px;
+margin-top: 0;
+}
+.khan__quot{
+  width: 790px;
+line-height: 34px;
+font-size: 24px;
+font-weight: normal;
+margin-bottom: 36px;
+margin-top: 0;
+}
+.khan__quot-author{
+line-height: 1.15;
+font-size: 24px;
+font-weight: 600;
+margin-top: 0;
+margin-bottom: 10px;
+}
+.khan__quot-author-subline{
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 68px;
+  margin-top: 0;
+}
+.khan__book-container{
+  width: 80%;
+margin: auto;
+display: flex;
+}
+.khan__book-pic{
+  width: 620px;
+  height: 608px;
+  margin-right: 48px;
+  object-fit: cover;
+  object-position: 0 0;
+}
+.khan__buy-link{
+line-height: 42px;
+font-size: 30px;
+font-weight: normal;
+align-self: flex-start;
+color: #2f80ed;
+text-decoration: none;
+transition: color 1s ease;
+}
+.khan__buy-link:hover{
+  opacity: 0.5;
+  color: #2f80ed;
+}
 .section-title{
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
   margin: auto;
+  margin-top: 100px;
   margin-bottom: 20px;
   text-align: center;
   justify-content: flex-start;
@@ -197,6 +336,11 @@
   right: 0;
   justify-content: center;
   z-index: 3;
+  transition: color 1s ease;
+}
+.feynman__link:hover{
+color: #2f80ed;
+opacity: 0.5;
 }
 .feynman__img{
   width: 867px;
@@ -263,6 +407,21 @@
   padding-bottom: 40px;
   justify-content: space-around;
 }
+.resources__logo-zone{
+  width: 1100px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 217px;
+}
+.resources__logo{
+  width: 270px;
+  height: 38px;
+  transition: color 1s ease;
+}
+.resources__logo:hover{
+  opacity: 0.5;
+  color: #f2f2f2;
+}
 .footer__columns{
   width: 90%;
   display: flex;
@@ -295,6 +454,11 @@
   color: #f2f2f2;
   text-align: left;
   margin-top: 0;
+  transition: color 1s ease;
+}
+.footer__column-link:hover{
+color: #f2f2f2;
+opacity: 0.5;
 }
 .footer__social-icon{
   margin-right: 10px;
