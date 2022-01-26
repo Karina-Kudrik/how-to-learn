@@ -1,4 +1,11 @@
 .cards__item{
   width: 240px;
   text-align: center;
+  padding-top: 60px;
+}
+.cards__item:nth-child(4){
+  padding-top: 0;
+}
+.cards__item:nth-child(5){
+  padding-top: 0;
 }
